@@ -26,8 +26,6 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
     - ./:/var/www/cms
-    ports:
-    - "81:80"
     environment:
       CMS_DEV_MODE: "true"
       MYSQL_DATABASE: "cms"
